@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import { Header } from './components/Header'
+import { Sidebar } from './components/Sidebar/Sidebar';
+import { Post } from './components/Post/Post';
 
 import './global.scss';
 import styles from './App.module.scss';
-import { Sidebar } from './components/Sidebar/Sidebar';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 		<div className={styles.wrapper}>
 			<Sidebar />
 			<main>
-				post
+				<Post />
 			</main>
 		</div>
 		</>
